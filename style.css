@@ -10,6 +10,7 @@ body{
 	height: 100%; /*its takes all page*/
 	background-image: url("img/img4.jpg");
 	background-size: 100% 105%;
+	background-repeat: no-repeat;
 }
 h1{
 	color:red;
