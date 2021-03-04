@@ -3,7 +3,34 @@ Football web for amature Sunday league team.
 The website uses HTML, CSS, JAVASCRIPT-Vanilla.
 
   Task/status:
-      first page - 
-      club page - 
-      
-      responsive
+      first page:
+                design
+                responsive
+                add img-s (using JS)
+                
+      club page:
+                design
+                add info
+                change main img
+      players:
+              design
+              add players with info
+              add players img
+              
+      stadium:
+              design
+              add stadium info and img.
+              
+      media:
+            design
+            add pictures, movis.
+              
+      shop:
+          design
+          add offers
+          client buy platform 
+          
+      sponsor:
+             add sponsors
+             links to sponsors
+             contact option
