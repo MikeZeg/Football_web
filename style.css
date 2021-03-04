@@ -1,0 +1,383 @@
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+body{
+	background-color:#4F8B12;
+	color:white;
+	width:100%; /*its takes all page*/
+	height: 100%; /*its takes all page*/
+	background-image: url("img/img4.jpg");
+	background-size: 100% 105%;
+}
+h1{
+	color:red;
+	font-size:13px;
+	text-align: center;
+	padding-right:40px;
+}
+h2{
+	color:yellow;
+	font-size:9px;
+	text-align:center;
+	padding-right:40px;
+}
+h3{
+	font-size:8px;
+	color:pink;
+	text-align: center;
+}
+/*nalezy ustalic pozycje danego elementu na stronie, abosult, fixed , relative*/
+#logo{
+	position: absolute;
+	width:15%;
+	top: 40px;
+	margin-left:5%;
+	float:left;
+	color:blue;
+}
+#logo>img{
+	width: 250px;
+	height: 100px;
+}
+.nav{
+	position: relative;
+	box-shadow:5px 5px 5px #494959;
+	width:5%;
+	min-height:3%;
+	float:left;
+	text-align: center;
+	left:29%;/*daj nam mozliwosc przesuniecia pierwszego elementu. Dla pozostałych elementów nalezy uzyc MARGIN*/
+	margin-left:14px;
+	margin-top:50px;
+	padding-top: 5px;
+	color:red;
+}
+.nav >a{
+	color:#927D61;
+	text-decoration: none;
+	font-size: 19px;
+}
+.nav a:hover{
+	transition:0.5s;
+	color:white;
+}
+/*Add extra img*/
+#small_logo{
+	position: relative;
+	width:5%;
+	min-height:3%;
+	float:left;
+	text-align: center;
+	left:29%;
+	margin-top:50px;
+	padding-top: 5px;
+	color:red;
+}/*Can add img to the mid in Nav: team logo or extra sponsor logo*/
+#small_logo{
+	/*
+	width: auto;
+	height: auto;
+	*/
+}
+
+#sponsor{
+	position: absolute;
+	top: 40px;
+	margin-left:79%;
+	margin-right: 15%;
+	float:left;
+	color:blue;
+}
+#sponsor a>img{
+	width: 240px;
+	height: 100px;
+}
+.last{
+	clear:both;
+}
+
+#container{
+	position:relative;
+	width:100%;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:4%;
+}
+#pictures{
+	position:relative;
+	width:54%;
+	height:300px;
+	left:23%;
+	margin-top: 3%;
+	background-image: url("img/img2.jpg");
+	background-size: 100% 100%;
+}
+#GameInfo{
+	position:relative;
+	float:left;
+	left: 37%;
+	top:90px;
+	width: 10%;
+	height:140px;
+	text-align: center;
+	font-size:19px;
+}
+ul>li{
+	list-style-type:none;
+	color: orange;
+}
+ul>li>h1{
+	color:white;
+	font-size:15px;
+	text-align: center;
+	margin-left: 35px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+ul>li>h2{
+	margin-top: 10px;
+	margin-left:30px;
+	font-size: 12px;
+	color:white;
+
+}
+#league{
+	position:relative;
+	float:left;
+	left: 43%;
+	top:90px;
+	width: 10%;
+	height:140px;
+}
+ol > li{
+	left: 20px;
+	text-align:center;
+	font-size:14px;
+	padding-top:10px;
+	padding-left:3px;
+/*inside or outside, very import think*/
+	list-style-position: inside;
+}
+#league p{
+	font-size: 18px;
+	text-align: center;
+	color:#EF2E2E;
+}
+
+footer{
+	position:relative;
+	min-height:auto;
+	width:auto;
+	color:;
+}
+#footer{
+	position: relative;
+	font-size:27px;
+	left: 280px;
+	top:30px;
+	float:left;
+}
+#facebook{
+	position: relative;
+	margin-top:5px;
+	margin-left:40px;
+	float:left;
+	width: auto;
+	height:auto;
+	font-size: 50px;
+}
+#facebook a>i{
+	color:#4267B2;
+}
+#facebook a>i:hover{
+	font-size: 1.05em;
+	color: #FFFFFF;
+}
+#twitter{
+	font-size: 50px;
+	position: relative;
+	margin-top:5px;
+	float:left;
+	margin-left:10px;
+	width: auto;
+	height:auto;
+}
+#twitter a>i{
+	color:#1DA1F2;
+}
+#twitter a>i:hover{
+	font-size: 1.05em;
+	color: #FCAF45;
+}
+#youtube{
+	font-size: 50px;
+	position: relative;
+	margin-top:5px;
+	float:left;
+	margin-left:10px;
+	width: auto;
+	height:auto;
+}
+#youtube a>i{
+	color:#FF0000;
+}
+#youtube a>i:hover{
+	font-size: 1.05em;
+	color: white;
+}
+
+#instagram{
+	font-size: 50px;
+	position: relative;
+	width: auto;
+	height:auto;
+	margin-top:5px;
+	float:left;
+	margin-left:10px;
+}
+#instagram a>i{
+	color:#e4405f;
+}
+#instagram a>i:hover{
+	color:#FCAF45;
+	font-size: 1.1em;
+}
+/*Media queries*/
+/* For PC, tv, laptops <1100 px*/
+@media (max-width: 1100px){
+	body{
+		width: auto;
+		height: auto;
+
+	}
+}
+@media (max-width: 1100px)and (min-width:1000px) {/* Tablet landscape orientation between 1000<x<1100*/
+	body{}
+	.nav{left:13%;}
+	#GameInfo{
+			width:15%;
+			left:34%;
+			}
+	#league{
+			width:15%;
+			left:34%;
+			}
+	#footer{
+			margin-right:0;
+			margin-left:90px;
+			}
+}
+@media (max-width: 1000px)and (min-width: 800px){/* Tablet vertical orientation 800<x<1000*/
+	.nav{
+			left:8%;
+			width:10%;
+			margin-left:3%;
+			margin-bottom:2%;
+		}
+	#GameInfo{
+			width:20%;
+			left:22%;
+			}
+	#league{
+			width:20%;
+			left:35%;
+			}
+	#facebook{font-size: 30px;}
+	#twitter{font-size: 30px;}
+	#youtube{font-size: 30px;}
+	#instagram{font-size: 30px;}
+	#footer{
+			left:0;
+			float:right;
+			margin-right:2%;
+			font-size:20px;
+			}
+}
+/*Phone landscape orientation 500<x<800 */
+@media (max-width: 800px) and (min-width: 500px){
+
+}
+/*min value 300px*/
+@media (max-width: 500px){
+	body{width:100%;}
+	.nav{clear:both;
+		width:20%;
+		margin-left:20%;
+		margin-top:1%;
+		text-align: center;
+		}
+	article{width:auto;}
+	#pictures{
+			position:relative;
+			width:87%;
+			height:210px;
+			left:7%;
+			top: 5px;
+			}
+	#GameInfo{
+			position:relative;
+			float:left;
+			left:0;
+			top:5px;
+			margin-left:20%;
+			width: 30%;
+			min-height:20%;
+			text-align: center;
+			}
+	#league{
+			position:relative;
+			float:left;
+			left:0;
+			top:5px;
+			width: 30%;
+			min-height:20%;
+			}
+	#facebook{
+			position: relative;
+			margin-top:5px;
+			margin-left:30%;
+			float:left;
+			width: 5%;
+			height:15%;
+			font-size: 15px;
+			}
+	#twitter{
+			position: relative;
+			margin-top:5px;
+			margin-left:30px;
+			float:left;
+			width: 5%;
+			height:15%;
+			font-size: 15px;
+			}
+	#youtube{
+			position: relative;
+			margin-top:5px;
+			margin-left:30px;
+			float:left;
+			width: 5%;
+			height:15%;
+			font-size: 15px;
+			}
+	#instagram{
+			position: relative;
+			margin-top:5px;
+			margin-left:30px;
+			float:left;
+			width: 5%;
+			height:15%;
+			font-size: 15px;
+		}
+	#footer{
+			clear:both;
+			left:0;
+			margin-left:18%;
+			margin-top:5%;
+			top:0px;
+			font-size:20px;
+			}
+	#container{height:auto;}
+}
