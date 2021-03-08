@@ -423,7 +423,10 @@ footer{
 }
 /*min value 300px*/
 @media (max-width: 500px){
-	body{width:100%;}
+	body{
+		width:100%;
+		
+	}
 	.nav{clear:both;
 		width:20%;
 		margin-left:20%;
