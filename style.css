@@ -354,7 +354,8 @@ footer{
 		margin-left:-6%;
 	}
 }
-@media (max-width: 1150px)and (min-width: 800px){/* Tablet vertical orientation 800<x<1000*/
+@media (max-width: 1150px)and (min-width: 800px){
+
 	.nav{
 			left:8%;
 			width:10%;
@@ -383,6 +384,25 @@ footer{
 
 @media (max-width:800px) and (min-width:600px){
 
+	body{
+		background-size: 100% 103%;
+	}
+	#logo img{
+		width:130px;
+		height: 80px;
+	}
+	.nav{
+		width: 7%;
+		left: 20%;
+	}
+	.nav a{
+		font-size: 18px;
+	}
+
+	#sponsor a>img{
+		width:130px;
+		height: 80px;
+	}
 	#GameInfo{
 			width: 30%;
 			left: 19%;
@@ -392,12 +412,10 @@ footer{
 		left:20%;
 	}
 	footer{
-		margin-left: 30%;
-		margin-top: -12%;
 	}
 	#footer{
-		clear: both;
-		left:0;
+		left:6%;
+		font-size: 20px;
 	}
 
 }
