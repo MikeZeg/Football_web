@@ -24,7 +24,7 @@ body{
 }
 .nav{
 	position: relative;
-	box-shadow:5px 5px 5px #494959;
+	box-shadow:5px 5px 5px #8F0E0E;
 	width:5%;
 	min-height:3%;
 	float:left;
@@ -35,9 +35,9 @@ body{
 	padding-top: 5px;
 }
 .nav >a{
-	color:#E4E01A;
+	color:#F1F0DE;
 	text-decoration: none;
-	font-size: 19px;
+	font-size: 23px;
 }
 .nav a:hover{
 	transition:0.5s;
@@ -174,30 +174,38 @@ footer{
 	font-size: 1.1em;
 }
 
-
-
 /*Media queries*/
-
 @media (min-width: 2000px){
 
+	.nav a{
+		font-size: 30px;
+	}
 	.article h1{
 		margin-top: 20%;
+		width: 70%;
+		font-size:30px;
 	}
 	.article p{
 		margin-left: -5%;
-		margin-top: 30%;
+		margin-top: 20%;
+		width: 60%;
+		font-size: 27px;
 	}
 	footer{
 		margin-top: 4%;
 	}
+	#footer{
+		margin-left: 15%;
+	}
 }
-
+/* ok done*/
 @media (max-width: 2000px) and (min-width: 1400px){
 		.article{
 				margin-top: 10%;
 				width: 65%;
 				height: 60%;
 				margin-left:3%;
+				font-size:
 			}
 		.article h1{
 				color: #7C7A17;
@@ -212,6 +220,12 @@ footer{
 }
 
 @media (max-width: 1400px)and (min-width:1000px) {
+		body{
+			background-size: auto;
+		}
+		.nav a{
+				font-size: 21px;
+		}
 		.article{
 				margin-top: 10%;
 				width: 65%;
@@ -220,8 +234,10 @@ footer{
 			}
 		.article h1{
 				color: #7C7A17;
+				font-size: 18px;
 			}
 		.article p{
+				font-size: 17px;
 				position: relative;
 				left:13%;
 				margin-top:26%;
@@ -232,111 +248,100 @@ footer{
 		margin-left:-8%;
 	}
 }
-@media (max-width: 1150px)and (min-width: 800px){
 
-	.nav{
-			}
-
-	#facebook{font-size: 30px;}
-	#twitter{font-size: 30px;}
-	#youtube{font-size: 30px;}
-	#instagram{font-size: 30px;}
-	#footer{
-			left:0;
-			float:right;
-			margin-right:2%;
-			font-size:20px;
-			}
-}
-
-@media (max-width:800px) and (min-width:600px){
-
+@media(max-width: 1000px)and (min-width:600px){
 	body{
+		background-size: 100% 120%;
 	}
 	#logo img{
-
+		width: 110px;
+		height: 80px;
 	}
-	.nav{
-
+	.nav {
+		left: 18%;
+		width: 8%;
 	}
 	.nav a{
+		font-size: 17px;
+		margin-left: 20px;
 	}
-
+	.nav a:hover{
+		transition:0.5s;
+		color:orange;
+	}
+	.article h1{
+		margin-top: 19%;
+		font-size: 15px;
+		width: 45%;
+	}
+	.article p{
+		margin-top: 25%;
+		left: 0;
+		font-size: 15px;
+		width: 85%;
+	}
+	#sponsor{
+		left: 5%;
+	}
 	#sponsor a>img{
-
-	}
-
-	footer{
+			width: 110px;
+			height: 80px;
 	}
 	#footer{
-
+		left:5%;
 	}
-
 }
-@media (max-width: 500px){
-	body{
 
-	}
-	#logo{
-
-	}
-	#logo>img{
-
-	}
-	.nav{
+@media (max-width: 600px){
+		body{
+			background-size: 130% 110%;
+			width: auto;
+			height: auto;
 
 		}
+		#logo{
+			width: auto;
+			height: auto;
+		}
+		#logo>img{
+			width:120px;
+			height:100px;
+		}
+		.nav{
+				clear:both;
+				width:20%;
+				top:19px;
+				margin-left:11%;
+				margin-top:1%;
+				text-align: center;
+			}
+			.nav a{
+				font-size: 25px;
+			}
 		#sponsor{
-
+			width: auto;
+			height: :auto;
 		}
 		#sponsor>a>img{
-
+				width:120px;
+				height:100px;
 		}
-
-	#facebook{
-
-			}
-	#twitter{
-
-			}
-	#youtube{
-
-			}
-	#instagram{
-
+		.article h1{
+			margin-left: 5%;
+			font-size: 17px;
+			width: 150%;
 		}
-	#footer{
-
-			}
-	#container{
-
-	}
-}
-@media (max-width: 400px){
-		body{
-
+		.article p{
+			position: absolute;
+			font-size: 15px;
+			margin-left:-5%;
+			margin-top: -5%;
+			width: 70%;
 		}
-
 		footer{
-
+			margin-left: 70px;
 		}
 		#footer{
 
 		}
-}
-@media (max-width:350px){
-
-	#logo>img{
-
-	}
-	#small_logo{
-
-	}
-	#sponsor a>img{
-
-	}
-
-	#footer{
-
-	}
 }
