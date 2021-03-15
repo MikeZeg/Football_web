@@ -357,7 +357,7 @@ footer{
 		margin-left:-6%;
 	}
 }
-@media (max-width: 1150px)and (min-width: 800px){
+@media (max-width: 1150px)and (min-width: 900px){
 
 	.nav{
 			left:8%;
@@ -385,7 +385,7 @@ footer{
 			}
 }
 
-@media (max-width:800px) and (min-width:600px){
+@media (max-width:900px) and (min-width:600px){
 
 	body{
 		background-size: 100% 103%;
