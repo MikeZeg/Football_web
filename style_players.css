@@ -81,9 +81,7 @@ article{
 	height: 60%;
 	margin-top: 5%;
 }
-.hide{
-	display: none;
-}
+
 .goalkeeper{
 	box-shadow: 5px 5px 5px white;
 	margin-top: 23%;
@@ -104,8 +102,15 @@ article{
 	color: white;
 }
 #goalkeeper>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-no-repeat;
 }
+
+#hide_goalkeeper{
+	display: block;
+}
+
 .defender{
 	box-shadow:5px 5px 5px 5px red;
 	float: left;
@@ -125,7 +130,12 @@ article{
 	color: white;
 }
 #defender_1>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-repeat;
+}
+#hide_defender_1{
+	display: inline;
 }
 #defender_2{
 	box-shadow: 5px 5px 5px black;
@@ -139,8 +149,14 @@ article{
 	color: white;
 }
 #defender_2>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-repeat;
 }
+#hide_defender_2{
+	display: none;
+}
+
 .midfielder{
 	box-shadow: 5px 5px 5px red;
 	float: left;
@@ -163,7 +179,12 @@ article{
 	color: white;
 }
 #midfielder>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-repeat;
+}
+#hide_midfielder{
+	display: none;
 }
 .forward{
 	box-shadow:5px 5px 5px 5px red;
@@ -186,7 +207,12 @@ article{
 	color: white;
 }
 #forward_1>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-repeat;
+}
+#hide_forward_1{
+	display: none;
 }
 #forward_2{
 	box-shadow: 5px 5px 5px white;
@@ -203,8 +229,11 @@ article{
 	color: white;
 }
 #forward_2>a>img{
-
+	width: 130px;
+	height:90px;
+	background-repeat: no-repeat;
 }
+
 .last{
 	clear:both;
 }
@@ -263,7 +292,6 @@ article{
 	clear: both;
 }
 footer{
-
 	position:absolute;
 	min-height:auto;
 	width:auto;
