@@ -3,6 +3,24 @@
 	padding:0px;
 	box-sizing: border-box;
 }
+/* List
+1 - Main style
+2 - Basic layers
+	2.1	Logo
+	2.2	Navigation
+	2.3	Sponsor
+	2.4 Article
+	2.5	Footer
+3.0 - Rensponsive
+	3.1 2k px
+	3.2 2000 px to 1400 px
+	3.3 1400px to 1000px
+	3.4 1000px to 700px
+	3.5	less 700px
+*/
+/* === 2. Basic layers ===*/
+
+	/* === 2.1 Main style ===*/
 body{
 	background-color:#0b1a0c;
 	color:white;
@@ -10,6 +28,8 @@ body{
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
+/* === 2.0 Basic layers ===*/
+	/* === 2.1 Logo ===*/
 #logo{
 	position: absolute;
 	width:15%;
@@ -22,6 +42,8 @@ body{
 	width: 250px;
 	height: 100px;
 }
+
+/* === 2.2 Navigation ===*/
 .nav{
 	position: relative;
 	box-shadow:5px 5px 5px #8F0E0E;
@@ -60,6 +82,8 @@ body{
 	height: auto;
 	*/
 }
+
+/* === 2.3 Sponsor ===*/
 #sponsor{
 	position: absolute;
 	top: 40px;
@@ -75,6 +99,8 @@ body{
 .last{
 	clear:both;
 }
+
+/* === 2.4 Article ===*/
 .article{
 	margin-top: 10%;
 	width: 65%;
@@ -94,6 +120,8 @@ body{
 	font-size: 17px;
 	color: #CDCA13;
 }
+
+/* === 2.5 Footer ===*/
 footer{
 	position:relative;
 	min-height:auto;
@@ -173,7 +201,8 @@ footer{
 	font-size: 1.1em;
 }
 
-/*Media queries*/
+/* === 3.0 Rensponsive ===*/
+	/* === 3.1 Footer ===*/
 @media (min-width: 2000px){
 
 	.nav a{
@@ -197,7 +226,7 @@ footer{
 		margin-left: 15%;
 	}
 }
-/* ok done*/
+/* === 3.2 2000px to 1400px ===*/
 @media (max-width: 2000px) and (min-width: 1400px){
 		.article{
 				margin-top: 10%;
@@ -217,7 +246,7 @@ footer{
 				width: 80%;
 			}
 }
-
+/* === 3.3 1400px to 1000px ===*/
 @media (max-width: 1400px)and (min-width:1000px) {
 		body{
 			background-size: auto;
@@ -247,7 +276,7 @@ footer{
 		margin-left:-8%;
 	}
 }
-
+/* === 3.4 1000px to 700px ===*/
 @media(max-width: 1000px)and (min-width:700px){
 	body{
 		background-size: 100% 120%;
@@ -290,7 +319,7 @@ footer{
 		left:5%;
 	}
 }
-
+/* === 3.5 less 700 ===*/
 @media (max-width: 700px){
 		body{
 			background-size: 120% 130%;

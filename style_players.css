@@ -64,7 +64,7 @@ body{
 }
 .nav a:hover{
 	transition:0.5s;
-	color:white;
+	color:red;
 }
 /*Add extra img*/
 #small_logo{
@@ -209,7 +209,6 @@ footer{
 .goalkeeper:hover .hide{
 	display: block;
 	margin-top: 0px;
-
 }
 /* =============
 3.2 defenders Positions
@@ -234,12 +233,14 @@ footer{
 #defender_1:hover + .hide{
 	display: block;
 	margin-top: -100px;
+	margin-bottom: -8px;
 }
 #defender_2{
 	width: auto;
 	height:auto;
 }
 #defender_2 a>img{
+	margin-top: 10px;
 	width: 100px;
 	height: 100px;
 }
@@ -291,6 +292,7 @@ footer{
 #forward_1:hover + .hide{
 	display: block;
 	margin-top: -100px;
+	margin-bottom: -8px;
 }
 #forward_2{
 	width: auto;
@@ -298,12 +300,14 @@ footer{
 	margin-bottom: 100px;
 }
 #forward_2 a>img{
+	margin-top: 10px;
 	width: 100px;
 	height: 100px;
 }
 #forward_2:hover + .hide{
 	display: block;
 	margin-top: -100px;
+	margin-bottom: -8px;
 }
 .last{
 	clear:both;
@@ -322,7 +326,10 @@ footer{
 #subs_1{
 	float: left;
 	margin-left: 5px;
-
+}
+#subs_1 a{
+	font-size: 20px;
+	color:red;
 }
 #subs_1 a>img{
 	width: 50px;
@@ -335,6 +342,11 @@ footer{
 }
 #subs_2{
 	float: left;
+	margin-left: 20px;
+}
+#subs_2 a{
+	font-size: 20px;
+	color:red;
 }
 #subs_2 a>img{
 	width: 50px;
@@ -347,10 +359,15 @@ footer{
 }
 #subs_3{
 	float: left;
+	margin-left: 20px;
 }
 #subs_3 a>img{
 	width: 50px;
 	height: 50px;
+}
+#subs_3 a{
+	font-size: 20px;
+	color:red;
 }
 #subs_3:hover .img{
 	background-color: green;
@@ -359,17 +376,22 @@ footer{
 }
 #subs_4{
 	float: left;
+		margin-left: 20px;
 }
 #subs_4 a>img{
 	width: 50px;
 	height: 50px;
+
 }
 #subs_4:hover .img{
 	background-color: green;
 	display: block;
 	margin-top: -50px;
 }
-
+#subs_4 a{
+	font-size: 20px;
+	color:red;
+}
 .last{
 	clear: both;
 }
@@ -379,43 +401,157 @@ footer{
 
 /*Media queries*/
 @media (min-width: 2000px){
-
+	#logo{
+		top:5%;
+		left:1%;
+	}
+	.nav{
+		top:40px;
+		left: 30%;
+	}
 	.nav a{
 		font-size: 30px;
 	}
+	#sponsor{
+		top:5%;
+		left: 4%;
+	}
 	footer{
-		margin-top: 4%;
+		top:110%;
+		left:0%;
 	}
 	#footer{
-		margin-left: 15%;
+		font-size: 34px;
+		color: red;
+		margin-left: -348%;
+	}
+	.goalkeeper{
+		margin-top: 2%;
+	}
+	.defender{
+		margin-top:-10%;
+	}
+	#defender_1:hover + .hide{
+		margin-top: -100px;
+		margin-bottom: -72px;
+	}
+	#defender_2{
+		margin-top:170%;
+	}
+	#defender_2:hover + .hide{
+		margin-bottom: -72px
+	}
+	.midfielder{
+		margin-top: 2%;
+		margin-left: 13%;
+	}
+	.forward{
+		margin-left:10%;
+		margin-top: -90px;
+	}
+	#forward_1:hover + .hide{
+		margin-bottom: -72px;
+	}
+	#forward_2{
+		margin-top:190px;
+	}
+	#forward_2:hover + .hide{
+		margin-bottom: 28px;
+	}
+	.Substitute{
+		position: absolute;
+		margin-top:10%;
+	}
+	#subs_2{
+		margin-left: 30px;
+	}
+	#subs_3{
+		margin-left: 30px;
+	}
+	#subs_4{
+		margin-left: 30px;
 	}
 }
-/* =============
-4.1 Media Queries resolution 1400px - 1000px
+/* ============= check this!!!!!!! and go down
+4.1 Media Queries resolution 2000px - 1400px
 =================*/
 @media (max-width: 2000px) and (min-width: 1400px){
 
+	body{
+	}
+	.Substitute{
+		margin-top: 95px;
+	}
 }
 /* =============
 4.2 Media Queries resolution 1400px - 1000px
 =================*/
 @media (max-width: 1400px)and (min-width:1000px) {
 		body{
-			background-size: auto;
+			background-size: cover;
+		}
+		.nav {
+			left: 30%;
+			margin-left: 1.2%;
 		}
 		.nav a{
-				font-size: 21px;
+				font-size: 20px;
+		}
+		#sponsor{
+			margin-right: 0;
+		}
+		footer{
+			top:122%;
+			left:-5%;
 		}
 	#footer{
-		margin-left:-8%;
+			left:41%;
+			color: white;
+			margin-top: 5%;
 	}
+
+	/*=== DEFENDERS =======*/
+
+	#defender_1{
+		margin-top: -50px;
+	}
+	#defender_1:hover + .hide{
+		margin-top: -100px;
+		margin-bottom: -44px;
+	}
+	#defender_2 a img{
+		margin-top: 25px;
+	}
+
+/*======= FORWARDS =========*/
+	.forward{
+		margin-top: -12%;
+	}
+	#forward_1:hover + .hide{
+		margin-top: -100px;
+		margin-bottom: -44px;
+	}
+	#forward_2 a img{
+		margin-top: 25px;
+	}
+	#forward_2:hover + .hide{
+		margin-top: -100px;
+		margin-bottom: -44px;
+	}
+	/*===== Substitute =====*/
+	.Substitute{
+		margin-top: 6%;
+	}
+
+
 }
 /* =============
 4.3 Media Queries resolution 1000px - 700px
 =================*/
 @media(max-width: 1000px)and (min-width:700px){
 	body{
-		background-size: 100% 120%;
+		background-size: cover;
+		font-size: 12px;
 	}
 	#logo a>img{
 		width: 110px;
@@ -440,10 +576,103 @@ footer{
 			width: 110px;
 			height: 80px;
 	}
-	#footer{
-		left:5%;
+	footer{
+		position: absolute;
+		top:93%;
+		left: -5%;
 	}
+	#footer{
+		top: 55%;
+		left:120%;
+		font-size: 13px;
+	}
+	#facebook{font-size: 30px;}
+	#twitter{font-size: 30px;}
+	#youtube{font-size: 30px;}
+	#instagram{font-size: 30px;}
+
+/*=== GOALKEEPER ===*/
+	.goalkeeper{
+		margin-top: -3.5%;
+	}
+	#goalkeeper>a>img{
+		width: 60px;
+		height: 60px;
+	}
+/*== DEFENDERS ===*/
+.defender{
+	margin-top: -18%;
 }
+#defender_1 a>img{
+	width: 60px;
+	height: 60px;
+}
+#defender_1:hover + .hide{
+	margin-top: -100px;
+	margin-bottom: -35px;
+}
+#defender_2 a img{
+	margin-top: 33px;
+	width: 60px;
+	height: 60px;
+}
+#defender_2:hover + .hide{
+	margin-bottom: -35px;
+}
+/*=== MIDFIELDER ===*/
+.midfielder{
+	margin-top: -4%;
+	margin-left: 40px;
+}
+#midfielder a>img{
+	width: 60px;
+	height: 60px;
+}
+
+/*=== FORWARDS ===*/
+.forward{
+	margin-top: -18%;
+}
+#forward_1 a>img{
+	width: 60px;
+	height: 60px;
+}
+#forward_1:hover + .hide{
+	margin-top: -100px;
+	margin-bottom: -35px;
+}
+#forward_2 a img{
+	margin-top: 33px;
+	width: 60px;
+	height: 60px;
+}
+#forward_2:hover + .hide{
+	margin-top: -100px;
+	margin-bottom: -35px;
+}
+/*=== Substitute ===*/
+.Substitute{
+	position: absolute;
+	top:90%;
+}
+#subs_1 a{
+	font-size: 16px;
+	color:red;
+}
+#subs_2 a{
+	font-size: 16px;
+	color:red;
+}
+#subs_3 a{
+	font-size: 16px;
+	color:red;
+}
+#subs_4 a{
+	font-size: 16px;
+	color:red;
+}
+}
+
 /* =============
 4.4 Media Queries resolution 700px
 =================*/

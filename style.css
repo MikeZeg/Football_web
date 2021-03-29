@@ -3,11 +3,33 @@
 	padding:0px;
 	box-sizing: border-box;
 }
+/* List
+1 - Main style
+2 - Basic layers
+	2.1	Logo
+	2.2	Navigation
+	2.3	Sponsor
+	2.4 Container
+	2.5	Game Information
+	2.6	League Information
+	2.7	Footer
+3.0 - Rensponsive
+	3.1 2k px
+	3.2 2000 px to 1400 px
+	3.3 1400px to 1000px
+	3.4 1150px to 900px
+	3.5	900 px
+	3.6	500px
+	3.7	400px
+	3.8 350px
+*/
+
+/* === 1.0 Main style ===*/
 body{
 	background-color:#0b1a0c;
 	color:white;
 	background-image: url("img/img4.jpg");
-	background-size: 100% 105%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 h1{
@@ -27,9 +49,14 @@ h3{
 	color:pink;
 	text-align: center;
 }
-/*nalezy ustalic pozycje danego elementu na stronie, abosult, fixed , relative*/
+/* =============
+2. Basic layers
+=================*/
+
+	/* === 2.1 Logo ===*/
+
 #logo{
-	position: absolute;
+	position: absolute;/*nalezy ustalic pozycje danego elementu na stronie, abosult, fixed , relative*/
 	width:15%;
 	top: 40px;
 	margin-left:5%;
@@ -40,6 +67,7 @@ h3{
 	width: 250px;
 	height: 100px;
 }
+/* === 2.2 Naviation ===*/
 .nav{
 	position: relative;
 	box-shadow:5px 5px 5px #494959;
@@ -80,7 +108,7 @@ h3{
 	height: auto;
 	*/
 }
-
+/* === 2.3 Sponsor ===*/
 #sponsor{
 	position: absolute;
 	top: 40px;
@@ -96,7 +124,7 @@ h3{
 .last{
 	clear:both;
 }
-
+/* === 2.4 Container ===*/
 #container{
 	position:relative;
 	width:100%;
@@ -114,6 +142,7 @@ h3{
 	background-image: url("img/img2.jpg");
 	background-size: 100% 100%;
 }
+/* === 2.5 Game information ===*/
 #GameInfo{
 	position:relative;
 	float:left;
@@ -141,8 +170,8 @@ ul>li>h2{
 	margin-left:30px;
 	font-size: 12px;
 	color:white;
-
 }
+/* === 2.6 League information ===*/
 #league{
 	position:relative;
 	float:left;
@@ -165,12 +194,11 @@ ol > li{
 	text-align: center;
 	color:#EF2E2E;
 }
-
+/* === 2.7 Footer ===*/
 footer{
 	position:relative;
 	min-height:auto;
 	width:auto;
-	color:;
 }
 #footer{
 	position: relative;
@@ -244,10 +272,10 @@ footer{
 	color:#FCAF45;
 	font-size: 1.1em;
 }
-/* Style Club site*/
 
+/* === 3. Rensponsive ===*/
 
-/*Media queries*/
+	/*=== 3.1 2000px ===*/
 
 @media (min-width: 2000px){
 	body{
@@ -315,15 +343,17 @@ footer{
 	}
 }
 
+/*=== 3.2 less 2000px to 1400px ===*/
 @media (max-width: 2000px) and (min-width: 1400px){
 	body{
 		background-color:#0b1a0c;
 		background-position: fixed;
-		background-size:100% 103%;
+		background-size:100% 105%;
 		background-repeat: no-repeat;
 	}
 }
 
+/*=== 3.3 1400px to 1000px ===*/
 @media (max-width: 1400px)and (min-width:1000px) {/* Tablet landscape orientation between 1000<x<1100*/
 	body{
 		width: auto;
@@ -357,6 +387,8 @@ footer{
 		margin-left:-6%;
 	}
 }
+
+/*=== 3.4 1150px to 900px ===*/
 @media (max-width: 1150px)and (min-width: 900px){
 
 	.nav{
@@ -385,6 +417,7 @@ footer{
 			}
 }
 
+/*=== 3.5 900px to 600px ===*/
 @media (max-width:900px) and (min-width:600px){
 
 	body{
@@ -420,8 +453,9 @@ footer{
 		left:6%;
 		font-size: 20px;
 	}
-
 }
+
+/*=== 3.6  500px ===*/
 @media (max-width: 500px){
 	body{
 		background-image: url("img/rotated.jpg");
@@ -543,6 +577,8 @@ footer{
 			height:auto;
 	}
 }
+
+/*=== 3.7 400px ===*/
 @media (max-width: 400px){
 		body{
 			background-size: 100% 105%;
@@ -597,6 +633,8 @@ footer{
 			left:-25px;
 		}
 }
+
+/*=== 3.8 350px ===*/
 @media (max-width:350px){
 
 	#logo a>img{
