@@ -228,6 +228,9 @@ footer{
 }
 /* === 3.2 2000px to 1400px ===*/
 @media (max-width: 2000px) and (min-width: 1400px){
+		body {
+				background-size: 100% 105%;
+		}
 		.article{
 				margin-top: 10%;
 				width: 65%;

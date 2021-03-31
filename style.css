@@ -49,12 +49,9 @@ h3{
 	color:pink;
 	text-align: center;
 }
-/* =============
-2. Basic layers
-=================*/
+/* === 2. Basic layers ===*/
 
 	/* === 2.1 Logo ===*/
-
 #logo{
 	position: absolute;/*nalezy ustalic pozycje danego elementu na stronie, abosult, fixed , relative*/
 	width:15%;
@@ -101,7 +98,8 @@ h3{
 	margin-top:50px;
 	padding-top: 5px;
 	color:red;
-}/*Can add img to the mid in Nav: team logo or extra sponsor logo*/
+}
+/*Can add img to the mid in Nav: team logo or extra sponsor logo*/
 #small_logo{
 	/*
 	width: auto;
@@ -348,7 +346,7 @@ footer{
 	body{
 		background-color:#0b1a0c;
 		background-position: fixed;
-		background-size:100% 105%;
+		background-size:100% 110%;
 		background-repeat: no-repeat;
 	}
 }
