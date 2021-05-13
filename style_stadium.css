@@ -2,6 +2,7 @@
 1 - Main style
 2 - Basic layers
 3 - Container style - pictures in container
+	3.1 dialog box
 4.0 - Rensponsive
 	4.1 Max 2k px
 	4.2 2000 px to 1400 px
@@ -204,14 +205,11 @@ footer{
 		margin-top: 300px;
 		margin-left: 600px;
 	}
+	/*=========================================
+						4.0 Media Queries ===
+		=========================================*/
 
-
-/*=========================================*/
-				/*=== 4.0 Media Queries ===
-/*=========================================*/
-
-
-/* === 4.1 Media Queries resolution 2000px ===*/
+		/* === 4.1 Media Queries resolution 2000px ===*/
 @media (min-width: 2000px){
 	#logo{
 		top:5%;
