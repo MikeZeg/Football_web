@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <!--CSS link -->
-	<link rel="stylesheet" href="style_stadium.css" type="text/css"/>
+	<link rel="stylesheet" href="style_media.css" type="text/css"/>
 <!--JavaScript link -->
 	<script src="js.js" ></script>
 <!--Font link -->
@@ -27,7 +27,7 @@
 			<div class="nav"><a href='players.html'>Players</a></div>
 			<div class="nav"><a href='stadium.html'>Stadium</a></div>
 			<div id="small_logo"></div><!-- Add extra logo-->
-			<div class="nav"><a href='media.html'>Media</a></div>
+			<div class="nav"><a href='#'>Media</a></div>
 			<div class="nav"><a href='#'>Shop</a></div>
 			<div class="nav"><a href='#'>Sponsor</a></div>
 			<div id="sponsor">
@@ -40,47 +40,22 @@
 	<article>
 		<div id="container">
 
-				<figure>
-					<p><img src="img/img5.jpg" alt="Our stadium"></p>
-					<figcaption>
-						In pretium porta aliquam. Quisque non felis sapien.
-						Maecenas id dignissim velit.
-						Vivamus ut est in nulla condimentum fermentum.
-					</figcaption>
-				</figure>
 
-				<figure id="figure_1">
-					<p><img src="img/img5.jpg" alt="Our stadium"></p>
-					<figcaption>
-						In pretium porta aliquam. Quisque non felis sapien.
-						Maecenas id dignissim velit.
-						Vivamus ut est in nulla condimentum fermentum.
-					</figcaption>
-				</figure>
-
-				<div class="last"></div>
-
-				<figure id="figure_2">
-					<p><img src="img/img5.jpg" alt="Our stadium"></p>
-					<figcaption>
-						In pretium porta aliquam. Quisque non felis sapien.
-						Maecenas id dignissim velit.
-						Vivamus ut est in nulla condimentum fermentum.
-					</figcaption>
-				</figure>
-
-				<figure id="figure_3">
-					<p><img src="img/img5.jpg" alt="Our stadium"></p>
-					<figcaption>
-						In pretium porta aliquam. Quisque non felis sapien.
-						Maecenas id dignissim velit.
-						Vivamus ut est in nulla condimentum fermentum.
-					</figcaption>
-				</figure>
 		</div>
 	</article>
 </main>
+<div id="add_img_window">
+	<form action="media.html" enctype="multipart/form-data" method="post">
+		<input type="hidden" name="MAX_FILE_SIZE" value="5000000"/>
+		<input name="send_img_x" type="file"/>
+		<input type="submit" value="Send file."/>
+	</form>
+<?php
+			include("download_img.php")
+?>
 
+
+</div>
 <footer>
 		<div id="facebook"><a href="#"target='_blank'><i class="fab fa-facebook-f"></i></a></div>
 		<div id="twitter"><a href="#"target='_blank'><i class="fab fa-twitter"></i></a></div>
